@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-ephesis: "Ephesis", serif;
+  --font-museomoderno: "MuseoModerno", sans-serif;
+}
+
+* {
+  cursor: url("./pinky.cur"), auto;
+  font-family: var(--font-poppins);
+}
+
+@layer utilities {
+  .inside {
+    box-shadow: 5px 5px 10px #c690bf, -5px -5px 10px #ffd0ff;
+  }
+}
+
+.font-museo {
+  font-family: var(--font-museomoderno);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-ephesis {
+  font-family: var(--font-ephesis);
+}
+
+.hero-bg {
+  position: relative;
+  background-image: url("/images/Hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  --mask: radial-gradient(
+        22.36px at 50% calc(100% - 30px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 20px) 0/40px 100%,
+    radial-gradient(22.36px at 50% calc(100% + 20px), #0000 99%, #000 101%) 50%
+      calc(100% - 10px) / 40px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.wave {
+  --mask: radial-gradient(
+        22.36px at 50% calc(100% - 30px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 20px) 0/40px 100%,
+    radial-gradient(22.36px at 50% calc(100% + 20px), #0000 99%, #000 101%) 50%
+      calc(100% - 10px) / 40px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+
